@@ -1,3 +1,4 @@
+<div class="container mx-auto mt-28">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -7,6 +8,22 @@
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
+  <div class="field">
+    <%= f.label :"first_name", "Nom ..." %><br />
+    <%= f.text_field :first_name, placeholder:"Nom ..", label_hide: true, 
+    class:"" %>
+  </div>
+  <div class="field">
+    <%= f.label :"last_name", "Prénom ..." %><br />
+    <%= f.text_field :last_name, placeholder:"Prénom ..", label_hide: true, 
+    class:"" %>
+  </div>
+  <div class="field">
+    <%= f.label :"contact", "N° whatsapp ..." %><br />
+    <%= f.phone_field :contact, placeholder:"N° whatsapp ..", label_hide: true, 
+    class:"" %>
+  </div>
+  <%= f.hidden_field :status, value:"Student" %>
 
   <div class="field">
     <%= f.label :password %>
@@ -16,14 +33,12 @@
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Inscription" , class:"bg-white py-2 px-4 font-bold text-black hover:bg-blue-500 hover:text-white hover:border- border-2 border-blue-500 " %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
