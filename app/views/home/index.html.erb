@@ -1,25 +1,41 @@
 <!-- component -->
-<div class="flex h-screen flex-col items-center justify-center space-y-6 bg-gray-100 px-4 sm:flex-row sm:space-x-6 sm:space-y-0">
-        <div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl">
-          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mt-8 h-16 w-16 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-          </svg>
-          <h1 class="mt-2 text-center text-2xl font-bold text-gray-500">Success</h1>
-          <p class="my-4 text-center text-sm text-gray-500">Woah, successfully completed 3/5 Tasks</p>
-          <div class="space-x-4 bg-gray-100 py-4 text-center">
-            <button class="inline-block rounded-md bg-red-500 px-10 py-2 font-semibold text-red-100 shadow-md duration-75 hover:bg-red-400">Cancel</button>
-            <button class="inline-block rounded-md bg-green-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400">Dashboard</button>
-          </div>
-        </div>
-        <div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl">
-          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mt-8 h-16 w-16 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
-          </svg>
-          <h1 class="mt-2 text-center text-2xl font-bold text-gray-500">Cancel</h1>
-          <p class="my-4 text-center text-sm text-gray-500">Just a small miss, 2/5 Tasks</p>
-          <div class="space-x-4 bg-gray-100 py-4 text-center">
-            <button class="inline-block rounded-md bg-red-500 px-10 py-2 font-semibold text-red-100 shadow-md duration-75 hover:bg-red-400">Cancel</button>
-            <button class="inline-block rounded-md bg-green-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400">Try Again</button>
-          </div>
+<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+  <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
+  <div class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+  <div class="flex flex-col hidden md:block -space-y-72 items-center relative">
+
+  <div class="relative shadow-2xl shadow-[#16192E] z-30 bg-transparent stroke-1 -rotate-[60deg] skew-y-[30deg] scale-75 border-gray-200 w-[650px] mx-auto h-[420px] rounded-3xl">
+    <div class="w-full h-full absolute top-0 left-0 rounded-3xl bg-cover bg-[url('https://products.ls.graphics/mesh-gradients/images/37.-Light-Sky-Blue_1.jpg')]">
+      <div class="p-12 flex flex-col justify-between h-full">
+        <img class="h-24 w-24" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
+        <div class="flex flex-col">
+<p class="text-gray-500 text-lg font-mono">1253 8282 2588 23562</p>
+        <p class="font-bold text-lg text-stone-600">Robert</p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="relative shadow-2xl shadow-[#16192E] z-20 bg-transparent stroke-1 -rotate-[60deg] skew-y-[30deg] scale-75 border-gray-200 w-[650px] mx-auto h-[420px] rounded-3xl">
+    <div class="w-full h-full absolute top-0 left-0 rounded-3xl bg-cover bg-[url('https://products.ls.graphics/mesh-gradients/images/35.-Ronchi.jpg')]">
+      <div class="p-12 flex flex-col justify-between h-full">
+        <img class="h-28 w-28" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg" alt="">
+        <div class="flex flex-col">
+<p class="text-gray-300 text-lg font-mono">1253 8282 2588 23562</p>
+        <p class="font-bold text-lg text-stone-300">Caroline Q.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="relative shadow-2xl shadow-[#16192E] z-10 bg-transparent stroke-1  -rotate-[60deg] skew-y-[30deg] scale-75 w-[650px] mx-auto h-[420px] rounded-3xl">
+    <div class="w-full h-full absolute top-0 left-0 rounded-3xl bg-cover bg-[url('https://products.ls.graphics/mesh-gradients/images/15.-Perfume_1.jpg')]">
+      <div class="p-12 flex flex-col justify-between h-full">
+        <img class="h-24 w-24" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
+        <div class="flex flex-col">
+<p class="text-gray-500 text-lg font-mono">1253 8282 2588 23562</p>
+        <p class="font-bold text-lg text-stone-600">Robert Lewonsky</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
