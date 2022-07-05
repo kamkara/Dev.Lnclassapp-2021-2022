@@ -2,13 +2,21 @@
 <html>
   <head>
     <title><%= title %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="description" content="<%= description %>">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+   
+    <!-- favico-->
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+     <%= favicon_link_tag asset_path('img/flavico.png') %>
   </head>
 
   <body>
